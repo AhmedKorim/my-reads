@@ -29,6 +29,7 @@
  ### 3. accessibility
   
   the search input is automatic focused
+  
   search input and changing shelf select element are labeled
 ### 4. author
 [Ahmed Koirm](https://github.com/AhmedKorim)

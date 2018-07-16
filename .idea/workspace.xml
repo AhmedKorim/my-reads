@@ -44,8 +44,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="157">
-                <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+              <first_editor relative-caret-position="99">
+                <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -211,7 +211,7 @@
       <workItem from="1531595807070" duration="1955000" />
       <workItem from="1531613961930" duration="4493000" />
       <workItem from="1531746171079" duration="7384000" />
-      <workItem from="1531753821110" duration="14217000" />
+      <workItem from="1531753821110" duration="14302000" />
     </task>
     <task id="LOCAL-00001" summary="mon">
       <created>1531596082754</created>
@@ -224,7 +224,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28049000" />
+    <option name="totallyTimeSpent" value="28134000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1612" height="872" extended-state="6" />
@@ -479,8 +479,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="157">
-            <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <first_editor relative-caret-position="99">
+            <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
