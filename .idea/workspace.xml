@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="714cc4e3-6283-4bdc-8712-36a6a80e0390" name="Default" comment="mon">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/list-of-books/BookComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list-of-books/BookComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -19,8 +21,20 @@
       <file leaf-file-name="BookComponent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/list-of-books/BookComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            <state relative-caret-position="136">
+              <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SearchBooksComponent.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="28" column="92" selection-start-line="28" selection-start-column="92" selection-end-line="28" selection-end-column="92" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -32,8 +46,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="481">
-                <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+              <first_editor relative-caret-position="377">
+                <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -48,18 +62,6 @@
               <caret line="33" column="60" selection-start-line="33" selection-start-column="52" selection-end-line="33" selection-end-column="60" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="580">
-              <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#25#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,10 +95,10 @@
         <option value="$PROJECT_DIR$/src/components/search-books/SearchBooks.js" />
         <option value="$PROJECT_DIR$/src/u.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/components/list-of-books/BookComponent.js" />
         <option value="$PROJECT_DIR$/src/components/list-of-books/ListComponent.js" />
-        <option value="$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/list-of-books/BookComponent.js" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -211,7 +213,7 @@
       <workItem from="1531595807070" duration="1955000" />
       <workItem from="1531613961930" duration="4493000" />
       <workItem from="1531746171079" duration="7384000" />
-      <workItem from="1531753821110" duration="12859000" />
+      <workItem from="1531753821110" duration="14042000" />
     </task>
     <task id="LOCAL-00001" summary="mon">
       <created>1531596082754</created>
@@ -224,7 +226,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26691000" />
+    <option name="totallyTimeSpent" value="27874000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1612" height="872" extended-state="6" />
@@ -238,9 +240,9 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.32882273" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Quokka" order="12" weight="0.32872927" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32596686" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32476318" />
       <window_info anchor="bottom" id="RNConsole" order="10" weight="0.32872927" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25642672" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25578406" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -436,12 +438,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="571">
-          <caret line="34" column="109" selection-start-line="34" selection-start-column="109" selection-end-line="34" selection-end-column="109" />
+        <state relative-caret-position="580">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#25#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -456,20 +458,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
+    <entry file="file://$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        <state relative-caret-position="280">
+          <caret line="28" column="92" selection-start-line="28" selection-start-column="92" selection-end-line="28" selection-end-column="92" />
           <folding>
-            <element signature="e#0#25#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/list-of-books/BookComponent.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        <state relative-caret-position="136">
+          <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -479,8 +481,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="481">
-            <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <first_editor relative-caret-position="377">
+            <caret line="31" column="2" selection-start-line="31" selection-start-column="2" selection-end-line="31" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>

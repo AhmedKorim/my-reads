@@ -30,6 +30,7 @@ class Book extends React.Component {
                     }}></div>
                     <div className="book-shelf-changer">
                         <select
+                            aria-label={`select shelf for ${bookData.title}`}
                             onChange={e => this.shelfChange(e.target.value)}
                             value={this.state.shelf}
                         >
@@ -37,7 +38,7 @@ class Book extends React.Component {
                             <option value="currentlyReading">Currently Reading</option>
                             <option value="wantToRead">Want to Read</option>
                             <option value="read">Read</option>
-                            <option value="none">None</option>
+                            <option  value="none">None</option>
                         </select>
                     </div>
                 </div>

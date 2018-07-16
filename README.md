@@ -8,6 +8,7 @@
 ## table of content
  * [ project overview](#1-start)
  * [getting started](#2-resourses)
+ * [accessibility and ux](#2-accessibility)
  * [Author](#3-author)
 
 ### 1. project overview
@@ -25,8 +26,11 @@
    `npm install && npm start`
    
    - after npm runs the browser will open the app
-    
-### 3. author
+ ### 3. accessibility
+  
+  the search input is automt
+  icly focused
+### 4. author
 [ahmedkoirm](https://github.com/AhmedKorim)
 
   

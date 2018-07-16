@@ -14,7 +14,10 @@ class SearchBooksComponent extends React.Component {
             res.error ?   this.setState({searchResults: []}) : this.setState({searchResults: res})
         )).catch(error => console.log(error))
     };
-
+    componentDidMount(){
+        console.log(this.searchInput);
+        this.searchInput.focus()
+    }
     render() {
         return (
             <div className="search-books">
@@ -23,6 +26,8 @@ class SearchBooksComponent extends React.Component {
                     <div className="search-books-input-wrapper">
                         <input type="text" placeholder="Search by title or author"
                                value={this.state.query}
+                               aria-label="search for a book enter author name or book title"
+                               ref={(input) => this.searchInput=input}
                                onChange={event => this.search(event.target.value)}
                         />
                     </div>
