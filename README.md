@@ -28,9 +28,9 @@
    - after npm runs the browser will open the app
  ### 3. accessibility
   
-  the search input is automt
-  icly focused
+  the search input is automatic focused
+  search input and changing shelf select element are labeled
 ### 4. author
-[ahmedkoirm](https://github.com/AhmedKorim)
+[Ahmed Koirm](https://github.com/AhmedKorim)
 
   
