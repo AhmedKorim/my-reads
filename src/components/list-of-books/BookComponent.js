@@ -1,18 +1,21 @@
 import React from 'react';
+import {update} from "../../BooksAPI";
 
 class Book extends React.Component {
 
-    state ={
+    state = {
         shelf: ''
     }
-    shelfChange = (newShelf= this.props.bookData.shelf) => {
+    shelfChange = (newShelf = this.props.bookData.shelf) => {
+        const book = this.props.bookData;
+        newShelf && this.setState({shelf: newShelf});
+        update(book, newShelf);
+    };
 
-      newShelf && this.setState({shelf: newShelf});
+    componentDidMount() {
+        this.shelfChange();
+    }
 
-    }
-    componentDidMount(){
-    this.shelfChange();
-    }
     render() {
         const {bookData} = this.props;
         return (
@@ -30,8 +33,8 @@ class Book extends React.Component {
                             value={this.state.shelf}
                         >
                             <option value="move" disabled>Move to...</option>
-                            <option value="currentlyReading" >Currently Reading</option>
-                            <option value="wantToRead" >Want to Read</option>
+                            <option value="currentlyReading">Currently Reading</option>
+                            <option value="wantToRead">Want to Read</option>
                             <option value="read">Read</option>
                             <option value="none">None</option>
                         </select>

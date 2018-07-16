@@ -1,9 +1,16 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import Book from "./BookComponent";
+import {getAll} from "../../BooksAPI";
 
 class ListComponent extends React.Component {
+    state = {
+        allBooks: []
+    };
+
     componentDidMount() {
+        getAll().then(allBooks => this.setState({allBooks}));
+
     }
 
     static bookShelves = [{
@@ -32,7 +39,7 @@ class ListComponent extends React.Component {
                                 <h2 className="bookshelf-title">{bookShelf.name}</h2>
                                 <div className="bookshelf-books">
                                     <ol className="books-grid">
-                                        {this.props.allBooks
+                                        {this.state.allBooks
                                             .filter(book => book.shelf === bookShelf.shelfTitle)
                                             .map((bookData ,index) => (
                                             <li key={index}>
