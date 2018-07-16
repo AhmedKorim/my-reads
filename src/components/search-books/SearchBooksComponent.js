@@ -32,7 +32,7 @@ class SearchBooksComponent extends React.Component {
                         {console.log(this.state.searchResults)}
 
                         {this.state.searchResults && this.state.searchResults.map((bookData, index) =>
-                            (<li key={index}><Book bookData={bookData}/></li>))}
+                            (<li key={index}> <Book bookData={bookData} updateData={this.props.updateData} /></li>))}
                     </ol>
                 </div>
             </div>

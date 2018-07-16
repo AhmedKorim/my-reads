@@ -4,14 +4,6 @@ import Book from "./BookComponent";
 import {getAll} from "../../BooksAPI";
 
 class ListComponent extends React.Component {
-    state = {
-        allBooks: []
-    };
-
-    componentDidMount() {
-        getAll().then(allBooks => this.setState({allBooks}));
-
-    }
 
     static bookShelves = [{
         name: 'Currently Reading'
@@ -39,11 +31,11 @@ class ListComponent extends React.Component {
                                 <h2 className="bookshelf-title">{bookShelf.name}</h2>
                                 <div className="bookshelf-books">
                                     <ol className="books-grid">
-                                        {this.state.allBooks
+                                        {this.props.allBooks
                                             .filter(book => book.shelf === bookShelf.shelfTitle)
                                             .map((bookData ,index) => (
                                             <li key={index}>
-                                                    <Book bookData={bookData}/>
+                                                    <Book bookData={bookData} updateData={this.props.updateData} />
                                                 </li>))}
                                     </ol>
                                 </div>

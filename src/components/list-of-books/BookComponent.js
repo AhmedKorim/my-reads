@@ -10,6 +10,7 @@ class Book extends React.Component {
         const book = this.props.bookData;
         newShelf && this.setState({shelf: newShelf});
         update(book, newShelf);
+        this.props.updateData();
     };
 
     componentDidMount() {
