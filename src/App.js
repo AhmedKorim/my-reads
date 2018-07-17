@@ -18,11 +18,7 @@ class BooksApp extends React.Component {
     }
     updateData = () => {
         getAll().then(allBooks => this.setState({allBooks}));
-        console.log(this.state.allBooks);
     }
-
-
-
     render() {
         return (
             <Router>
