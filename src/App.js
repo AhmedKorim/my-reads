@@ -13,7 +13,6 @@ class BooksApp extends React.Component {
     };
     fetchAll = () => {
         getAll().then(allBooks => this.setState({allBooks}));
-        console.log('fetched');
     };
 
 
@@ -24,7 +23,6 @@ class BooksApp extends React.Component {
 
     updateData = (newBook, newShelf) => {
         update(newBook, newShelf);
-        console.log('bookadded', newBook.title);
         this.setState(prevState => (
             {
                 allBooks: prevState.allBooks.map(book => {

@@ -1,5 +1,4 @@
 import React from 'react';
-import {update} from "../../BooksAPI";
 
 class Book extends React.Component {
 
@@ -9,7 +8,6 @@ class Book extends React.Component {
     shelfChange = (newShelf = this.props.bookData.shelf) => {
         const book = this.props.bookData;
         newShelf && this.setState({shelf: newShelf});
-        console.log('Shelf changes' , newShelf);
         this.props.updateData(book, newShelf);
     };
 
