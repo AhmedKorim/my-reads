@@ -16,6 +16,10 @@ class ListComponent extends React.Component {
             , shelfTitle: "read"
         }];
 
+    componentDidMount() {
+        this.props.fetch();
+    }
+
     render() {
         return (
 
@@ -32,9 +36,9 @@ class ListComponent extends React.Component {
                                     <ol className="books-grid">
                                         {this.props.allBooks
                                             .filter(book => book.shelf === bookShelf.shelfTitle)
-                                            .map((bookData ,index) => (
-                                            <li key={index}>
-                                                    <Book bookData={bookData} updateData={this.props.updateData} />
+                                            .map((bookData, index) => (
+                                                <li key={index}>
+                                                    <Book bookData={bookData} updateData={this.props.updateData}/>
                                                 </li>))}
                                     </ol>
                                 </div>

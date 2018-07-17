@@ -11,9 +11,15 @@ class BooksApp extends React.Component {
     state = {
         allBooks: []
     };
+    fetchAll = () => {
+        getAll().then(allBooks => this.setState({allBooks}));
+        console.log('fetched');
+    };
+
 
     componentDidMount() {
-        getAll().then(allBooks => this.setState({allBooks}));
+        this.fetchAll();
+
     }
 
     updateData = (newBook, newShelf) => {
@@ -34,8 +40,9 @@ class BooksApp extends React.Component {
         return (
             <Router>
                 <div className="app">
-                    <Route path="/" render={() => <ListComponent allBooks={this.state.allBooks} updateData={this.updateData}/>} exact={true}/>
-                    <Route path="/search" render={() => <SearchBooksComponent allBooks={this.state.allBooks}  updateData={this.updateData}/>}/>
+                    <Route path="/" render={() => <ListComponent allBooks={this.state.allBooks} fetch={this.fetchAll}  updateData={this.updateData}/>} exact={true}/>
+                    <Route path="/search"
+                           render={() => <SearchBooksComponent allBooks={this.state.allBooks} updateData={this.updateData}/>}/>
                 </div>
             </Router>
         )
