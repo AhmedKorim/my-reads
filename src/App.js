@@ -18,16 +18,15 @@ class BooksApp extends React.Component {
 
     updateData = (newBook, newShelf) => {
         update(newBook, newShelf);
+        console.log('bookadded', newBook.title);
         this.setState(prevState => (
             {
                 allBooks: prevState.allBooks.map(book => {
                     if (book.id === newBook.id) book.shelf = newShelf;
-
                     return book;
                 })
             }
         ));
-        console.log('red');
     };
 
 
@@ -36,7 +35,7 @@ class BooksApp extends React.Component {
             <Router>
                 <div className="app">
                     <Route path="/" render={() => <ListComponent allBooks={this.state.allBooks} updateData={this.updateData}/>} exact={true}/>
-                    <Route path="/search" render={() => <SearchBooksComponent updateData={this.updateData}/>}/>
+                    <Route path="/search" render={() => <SearchBooksComponent allBooks={this.state.allBooks}  updateData={this.updateData}/>}/>
                 </div>
             </Router>
         )

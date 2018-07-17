@@ -8,16 +8,38 @@ class SearchBooksComponent extends React.Component {
         query: '',
         searchResults: [],
     };
-    search = (value) => {
-        this.setState({query: value});
-        search(this.state.query).then(res => (
-            res.error ?   this.setState({searchResults: []}) : this.setState({searchResults: res.map(book => {book.shelf='none'; return book})})
-        )).catch(error => console.log(error))
+
+    runSearch = (query) => {
+        const {allBooks} = this.props;
+        const trimmedQuery = query.trim();
+        this.setState({query});
+        trimmedQuery === '' && this.setState({searchResults: []});
+        search(trimmedQuery).then(res => {
+            if (res) {
+
+                if (!res.length) {
+                    this.setState({searchResults: []});
+                } else {
+                    this.setState({
+                        searchResults: res.map(book => {
+                            //_book that existed already
+                            const excitedBook = allBooks.find(_book => _book.id === book.id);
+
+                            if (excitedBook) return excitedBook;
+                            book.shelf = 'none';
+                            return book;
+                        })
+                    })
+                }
+            }
+        })
     };
-    componentDidMount(){
-        console.log(this.searchInput);
+
+    componentDidMount() {
+
         this.searchInput.focus()
     }
+
     render() {
         return (
             <div className="search-books">
@@ -27,17 +49,18 @@ class SearchBooksComponent extends React.Component {
                         <input type="text" placeholder="Search by title or author"
                                value={this.state.query}
                                aria-label="search for a book enter author name or book title"
-                               ref={(input) => this.searchInput=input}
-                               onChange={event => this.search(event.target.value)}
+                               ref={(input) => this.searchInput = input}
+                               onChange={event => this.runSearch(event.target.value)}
                         />
                     </div>
                 </div>
                 <div className="search-books-results">
                     <ol className="books-grid">
                         {this.state.searchResults &&
-                        this.state.searchResults.length> 0 ? this.state.searchResults.map((bookData, index) =>
-                            (<li key={index}> <Book bookData={bookData} updateData={this.props.updateData} /></li>)) :
-                            ( <li> {this.state.query === '' ? 'Enter author name or book title to show the result books here' : `Sorry your search ${this.state.query.toUpperCase()} is not available`} </li>)}
+                        this.state.searchResults.length > 0 ? this.state.searchResults.map((bookData, index) =>
+                                (<li key={index}><Book bookData={bookData} updateData={this.props.updateData}/></li>)) :
+                            (
+                                <li> {this.state.query === '' ? 'Enter author name or book title to show the result books here' : `Sorry your search ${this.state.query.toUpperCase()} is not available`} </li>)}
                     </ol>
                 </div>
             </div>
