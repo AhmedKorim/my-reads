@@ -12,11 +12,9 @@ class Book extends React.Component {
         update(book, newShelf);
         this.props.updateData();
     };
-
     componentDidMount() {
         this.shelfChange();
     }
-
     render() {
         const {bookData} = this.props;
         return (
