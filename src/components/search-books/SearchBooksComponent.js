@@ -11,7 +11,7 @@ class SearchBooksComponent extends React.Component {
     search = (value) => {
         this.setState({query: value});
         search(this.state.query).then(res => (
-            res.error ?   this.setState({searchResults: []}) : this.setState({searchResults: res})
+            res.error ?   this.setState({searchResults: []}) : this.setState({searchResults: res.map(book => {book.shelf='none'; return book})})
         )).catch(error => console.log(error))
     };
     componentDidMount(){
@@ -34,10 +34,10 @@ class SearchBooksComponent extends React.Component {
                 </div>
                 <div className="search-books-results">
                     <ol className="books-grid">
-                        {console.log(this.state.searchResults)}
-
-                        {this.state.searchResults && this.state.searchResults.map((bookData, index) =>
-                            (<li key={index}> <Book bookData={bookData} updateData={this.props.updateData} /></li>))}
+                        {this.state.searchResults &&
+                        this.state.searchResults.length> 0 ? this.state.searchResults.map((bookData, index) =>
+                            (<li key={index}> <Book bookData={bookData} updateData={this.props.updateData} /></li>)) :
+                            ( <li> {this.state.query === '' ? 'Enter author name or book title to show the result books here' : `Sorry your search ${this.state.query.toUpperCase()} is not available`} </li>)}
                     </ol>
                 </div>
             </div>

@@ -13,18 +13,20 @@ class BooksApp extends React.Component {
     };
 
     componentDidMount() {
-        this.updateData();
-
-    }
-    updateData = () => {
         getAll().then(allBooks => this.setState({allBooks}));
     }
+
+    updateData = () => {
+        this.render();
+    };
+
+
     render() {
         return (
             <Router>
                 <div className="app">
-                    <Route path="/" render={()=><ListComponent allBooks={this.state.allBooks} updateData={this.updateData}/>} exact={true}/>
-                    <Route path="/search" render={()=><SearchBooksComponent updateData={this.updateData}/>}/>
+                    <Route path="/" render={() => <ListComponent allBooks={this.state.allBooks} updateData={this.updateData}/>} exact={true}/>
+                    <Route path="/search" render={() => <SearchBooksComponent updateData={this.updateData}/>}/>
                 </div>
             </Router>
         )

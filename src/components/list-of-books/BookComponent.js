@@ -1,5 +1,4 @@
 import React from 'react';
-import {update} from "../../BooksAPI";
 
 class Book extends React.Component {
 
@@ -7,14 +6,15 @@ class Book extends React.Component {
         shelf: ''
     }
     shelfChange = (newShelf = this.props.bookData.shelf) => {
-        const book = this.props.bookData;
         newShelf && this.setState({shelf: newShelf});
-        update(book, newShelf);
+        this.props.updateData();
         this.props.updateData();
     };
+
     componentDidMount() {
         this.shelfChange();
     }
+
     render() {
         const {bookData} = this.props;
         return (
@@ -36,7 +36,7 @@ class Book extends React.Component {
                             <option value="currentlyReading">Currently Reading</option>
                             <option value="wantToRead">Want to Read</option>
                             <option value="read">Read</option>
-                            <option  value="none">None</option>
+                            <option value="none">None</option>
                         </select>
                     </div>
                 </div>

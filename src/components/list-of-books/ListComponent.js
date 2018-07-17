@@ -1,7 +1,6 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import Book from "./BookComponent";
-import {getAll} from "../../BooksAPI";
 
 class ListComponent extends React.Component {
 
