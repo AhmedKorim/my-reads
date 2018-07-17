@@ -4,7 +4,7 @@ import './App.css'
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import ListComponent from "./components/list-of-books/ListComponent";
 import SearchBooksComponent from "./components/search-books/SearchBooksComponent";
-import {getAll} from "./BooksAPI";
+import {getAll, update} from "./BooksAPI";
 
 
 class BooksApp extends React.Component {
@@ -16,8 +16,18 @@ class BooksApp extends React.Component {
         getAll().then(allBooks => this.setState({allBooks}));
     }
 
-    updateData = () => {
-        this.render();
+    updateData = (newBook, newShelf) => {
+        update(newBook, newShelf);
+        this.setState(prevState => (
+            {
+                allBooks: prevState.allBooks.map(book => {
+                    if (book.id === newBook.id) book.shelf = newShelf;
+
+                    return book;
+                })
+            }
+        ));
+        console.log('red');
     };
 
 
