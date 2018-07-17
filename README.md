@@ -1,6 +1,6 @@
 
 
-# my reads reviews Udacity FEND project
+# Book tracking app
    using react.js and react router and pre given API to create react SPA that enable the 
    user to search for books with author's name or book title and add the books into various
    categories
