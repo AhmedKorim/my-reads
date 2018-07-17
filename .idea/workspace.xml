@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="714cc4e3-6283-4bdc-8712-36a6a80e0390" name="Default" comment="mon">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/list-of-books/BookComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/list-of-books/BookComponent.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,7 +13,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BookComponent.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BookComponent.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/list-of-books/BookComponent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="261">
@@ -23,11 +22,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BooksAPI.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BooksAPI.js">
+      <file leaf-file-name="SearchBooksComponent.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="219">
-              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+            <state relative-caret-position="402">
+              <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -79,10 +81,10 @@
         <option value="$PROJECT_DIR$/src/u.txt" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js" />
         <option value="$PROJECT_DIR$/src/components/list-of-books/ListComponent.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/components/list-of-books/BookComponent.js" />
+        <option value="$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js" />
       </list>
     </option>
   </component>
@@ -213,7 +215,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40581000" />
+    <option name="totallyTimeSpent" value="41778000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1612" height="872" extended-state="6" />
@@ -230,7 +232,7 @@
       <window_info anchor="bottom" id="Quokka" order="12" weight="0.32872927" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32320443" />
       <window_info anchor="bottom" id="RNConsole" order="10" weight="0.32872927" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25899744" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25899744" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -587,16 +589,6 @@
     <entry file="file://$PROJECT_DIR$/src/icons/add.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="60" column="52" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BooksAPI.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -625,6 +617,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="9" column="53" selection-start-line="9" selection-start-column="53" selection-end-line="9" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/search-books/SearchBooksComponent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

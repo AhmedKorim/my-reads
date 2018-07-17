@@ -13,7 +13,11 @@ class SearchBooksComponent extends React.Component {
         const {allBooks} = this.props;
         const trimmedQuery = query.trim();
         this.setState({query});
-        trimmedQuery === '' && this.setState({searchResults: []});
+        // trimmedQuery === '' && this.setState({searchResults: []});
+        if (trimmedQuery === '') {
+            this.setState({searchResults: []});
+            return;
+        }
         search(trimmedQuery).then(res => {
             if (res) {
 
@@ -32,7 +36,7 @@ class SearchBooksComponent extends React.Component {
                     })
                 }
             }
-        })
+        }).catch(err => console.log(err));
     };
 
     componentDidMount() {
