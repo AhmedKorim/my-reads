@@ -22,7 +22,8 @@ class BooksApp extends React.Component {
     }
 
     updateData = (newBook, newShelf) => {
-        update(newBook, newShelf);
+        update(newBook, newShelf).then(res => console.log(res));
+        console.log('updated');
         this.setState(prevState => (
             {
                 allBooks: prevState.allBooks.map(book => {
@@ -38,7 +39,8 @@ class BooksApp extends React.Component {
         return (
             <Router>
                 <div className="app">
-                    <Route path="/" render={() => <ListComponent allBooks={this.state.allBooks} fetch={this.fetchAll}  updateData={this.updateData}/>} exact={true}/>
+                    <Route path="/" render={() => <ListComponent allBooks={this.state.allBooks} fetch={this.fetchAll} updateData={this.updateData}/>}
+                           exact={true}/>
                     <Route path="/search"
                            render={() => <SearchBooksComponent allBooks={this.state.allBooks} updateData={this.updateData}/>}/>
                 </div>
